@@ -27,6 +27,15 @@
 
     <build>
         <plugins>
+            <!-- Show deprecation details (MET12-J demo overrides the deprecated finalize()) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.15.0</version>
+                <configuration>
+                    <showDeprecation>true</showDeprecation>
+                </configuration>
+            </plugin>
             <!-- Run any demo: mvn compile exec:java -Dexec.mainClass=cert.Err08J -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
