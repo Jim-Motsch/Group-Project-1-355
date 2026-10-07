@@ -37,8 +37,32 @@ Source: docs/IT355GroupProject1Rules.pdf. Titles are CERT's official names.
 - EXP03-J (P9): Do not use the equality operators when comparing values of boxed primitives
 - ERR02-J (P12): Prevent exceptions while logging data
 
-## Recommendations (3 each, only from Rec 05, 06, 07, 13)
-TODO: group to assign
+## Recommendations (3 each, from Rec 05, 06, 07, 13)
+
+### Martin
+- ERR50-J: Use exceptions only for exceptional conditions
+- FIO50-J: Do not make assumptions about file creation
+- OBJ51-J: Minimize the accessibility of classes and their members
+
+### James
+- MET54-J: Always provide feedback about the resulting value of a method
+- MET55-J: Return an empty array or collection instead of a null value for methods that return an array or collection
+- FIO53-J: Use the serialization methods writeUnshared() and readUnshared() with care
+
+### Jimmy
+- MET50-J: Avoid ambiguous or confusing uses of overloading
+- MET53-J: Ensure that the clone() method calls super.clone()
+- ERR54-J: Use a try-with-resources statement to safely handle closeable resources
+
+### Ian
+- OBJ50-J: Never confuse the immutability of a reference with that of the referenced object
+- OBJ56-J: Provide sensitive mutable classes with unmodifiable wrappers
+- MET51-J: Do not use overloaded methods to differentiate between runtime types
+
+### Alex
+- ERR51-J: Prefer user-defined exceptions over more general exception types
+- ERR52-J: Avoid in-band error indicators
+- FIO51-J: Identify files using multiple file attributes
 
 ## Notes for Java 17
 - SER04-J, SER08-J: the Security Manager is deprecated for removal. Demonstrate
