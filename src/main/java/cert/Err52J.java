@@ -51,7 +51,7 @@ public class Err52J {
         System.out.println("noncompliant: Oslo -> " + badText("Oslo") + "   <-- real reading mistaken for the error");
         System.out.println("compliant   : Oslo -> " + goodText("Oslo"));
 
-        System.out.println("\n-- Scenario 2: Atlantis is not in the table --");
+        System.out.println("\n-- Scenario 2 (CONTROL CASE): Atlantis is not in the table; identical output is expected --");
         System.out.println("noncompliant: Atlantis -> " + badText("Atlantis"));
         System.out.println("compliant   : Atlantis -> " + goodText("Atlantis"));
 
